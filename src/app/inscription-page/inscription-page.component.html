@@ -1,0 +1,55 @@
+<ion-header [translucent]="true">   <ion-toolbar>     <ion-buttons slot="start">       <ion-menu-button></ion-menu-button>     </ion-buttons>     <ion-title>Inscription</ion-title>   </ion-toolbar> </ion-header>
+<ion-content style="back">
+
+
+  <div class="logo">
+    <img src="../assets/img/dbleu.png" style="
+    width: 170px;
+    height: 190px;
+   margin-left:95px;
+   opacity: 70%;"></div>
+ <ion-Card style="border-color: blue; margin-bottom: 0;"> 
+   <p style="text-align: center; margin-bottom: 20px;">Avec Réseaux Sociaux :</p>
+   <img src="../assets/img/facebook.png" style="width: 85px; height: 85px; margin-left: 55px"><img src="../assets/img/google.png" style="width: 85px; height: 85px; margin-left: 55px">
+        <p style="text-align: center;">Ou</p>
+        <div style="margin-top: 10px;">
+        
+          <ion-item>
+            <div class="logo" style="margin-top: 20px;">
+              <img class="img" src="../assets/img/profil_vide.jpg" style="
+              width: 85px;
+              height: 85px;
+            ">
+            
+            </div>
+            <ion-label id="profile_image" color="primary" stacked> </ion-label>
+            <ion-input type="file" accept="image/*" (change)="changeListener($event)"></ion-input>
+          </ion-item>
+          <ion-item style="margin-top: 1em; margin-bottom:1em">
+            <ion-label color="black">Prénom</ion-label>
+            <ion-input color="black" type="text" placeholder="Prénom"></ion-input>
+          </ion-item>
+          <ion-item style="margin-bottom:1em">
+            <ion-label color="black">Nom</ion-label>
+            <ion-input color="black" type="text" placeholder="Nom"></ion-input>
+          </ion-item>
+          <ion-item style="margin-bottom:1em">
+            <ion-label color="black">Date de Naissance</ion-label>
+            <ion-input color="black" type="mail" placeholder="JJ/MM/AA"></ion-input>
+          </ion-item>
+          <ion-item style="margin-bottom:1em">
+            <ion-label color="black">Adresse e-mail</ion-label>
+            <ion-input color="black" type="mail" placeholder="example@gmail.com"></ion-input>
+          </ion-item>
+          <ion-item style="margin-bottom:1em">
+            <ion-label color="black">Pays</ion-label>
+            <ion-input color="black" type="mail" placeholder="france"></ion-input>
+          </ion-item>
+          <ion-item style="margin-bottom:1em">
+            <ion-label color="black">Ville</ion-label>
+            <ion-input color="black" type="mail" placeholder="melouse"></ion-input>
+          </ion-item>
+          <ion-button (click)='goToAccueil()' fill="outline" style="padding-left: 120px; margin-top:10px; padding-bottom: 15px">Continuer</ion-button>
+        </div>
+  </ion-Card>
+</ion-content>
